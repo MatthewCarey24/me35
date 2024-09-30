@@ -6,7 +6,7 @@ import gc
 
 # MQTT Settings
 mqtt_broker = 'broker.hivemq.com'
-topic_sub = 'ME35-24/startstop'
+topic_sub = 'ME35-24/camera-test'
 
 run_program = False
 
@@ -20,6 +20,8 @@ def callback(topic, msg):
     elif msg_decoded == 'stop':
         run_program = False
         print("Program stopped via MQTT.")
+
+    print(msg_decoded)
 
 # ---------------------------------Breathing-----------------------------
 async def breathe():  
