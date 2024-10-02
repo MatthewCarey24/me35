@@ -101,9 +101,12 @@ def mqtt_callback(topic, msg):
         print("Motor is stopped by BLE, ignoring MQTT commands.")
         return
 
-    if msg == b'turn':
+    if msg == b'turn_left':
         print("MQTT: Turning motor")
         motor_forward(50)
+    if msg == b'turn_right':
+        print("MQTT: Stopping Motor")
+        motor_stop()
     elif msg == b'backward':
         print("MQTT: Moving motor backward")
         motor_backward(80)
