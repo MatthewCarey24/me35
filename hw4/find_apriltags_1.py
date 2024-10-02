@@ -15,7 +15,7 @@ from mqtt import MQTTClient
 
 SSID = "Tufts_Robot"  # Network SSID
 KEY = ""  # Network key
-mqtt_broker = 'broker.hivemq.com' 
+mqtt_broker = 'broker.hivemq.com'
 
 # Init wlan module and connect to network
 wlan = network.WLAN(network.STA_IF)
@@ -31,7 +31,7 @@ print("WiFi Connected ", wlan.ifconfig())
 
 topic_pub = 'ME35-24/camera-test'
 
-client = MQTTClient('ME35_chris', mqtt_broker, port=1883, keepalive=60)
+client = MQTTClient('ME35_openmv', mqtt_broker, port=1883, keepalive=60)
 client.connect()
 print('Connected to %s MQTT broker' % (mqtt_broker))
 
@@ -55,14 +55,13 @@ cy = 60   # Principal point y (typically image height / 2).
 while True:
     clock.tick()
     img = sensor.snapshot()
-    
+
     # Add fx, fy, cx, and cy parameters in the find_apriltags() function call
     for tag in img.find_apriltags(fx=fx, fy=fy, cx=cx, cy=cy):
         img.draw_rectangle(tag.rect(), color=(255, 0, 0))
         img.draw_cross(tag.cx(), tag.cy(), color=(0, 255, 0))
         print_args = (tag.family(), tag.id(), (180 * tag.rotation()) / math.pi)
-        msg = f"{print_args[1]}"
+        msg = 'turn_right'
         print(msg)
         client.publish(topic_pub.encode(),msg.encode())
-            
-    
+
