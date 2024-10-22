@@ -22,7 +22,7 @@ run_program = False
 midi_file = 'Seinfeld.mid'  # Change this to the name of your MIDI file
 
 # Initialize MIDI peripheral
-p = Yell('Matt', verbose=True, type='midi')
+p = Yell('Mattt', verbose=True, type='midi')
 p.connect_up()
 
 # Set up the pause button
