@@ -3,7 +3,7 @@ import time
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-wlan.connect('tufts_eecs', 'foundedin1883')
+wlan.connect('Tufts_Robot', '')
 
 while wlan.ifconfig()[0] == '0.0.0.0':
     print('.', end=' ')
