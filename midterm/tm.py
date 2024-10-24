@@ -2,7 +2,7 @@
 from pyscript.js_modules import teach, pose, ble_library, mqtt_library
 
 #ble = ble_library.newBLE()
-myClient = mqtt_library.myClient
+myClient = mqtt_library.myClient("broker.hivemq.com", 8884)
 mqtt_connected = False
 sub_topic = 'ME35-24/listen'
 pub_topic = 'ME35-24/stu'
