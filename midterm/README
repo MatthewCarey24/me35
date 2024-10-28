@@ -1,0 +1,13 @@
+README
+ME 35 - Midterm
+
+Name: Matthew Carey
+
+This repository implements the files necessary to run the bass from the pico, 
+as well as control the volume via teachable machines
+
+BLE_CEEO.py  - implements the bluetooth packages used by the pico
+Seinfeld.mid - midi file containing the song to play
+main.py      - code that runs on the pico to play the music
+mqtt.py      - implements the mqtt packages used to communicate
+tm.py        - runs on a pc that uses teachable machines to control volume
