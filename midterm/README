@@ -3,8 +3,9 @@ ME 35 - Midterm
 
 Name: Matthew Carey
 
-This repository implements the files necessary to run the bass from the pico, 
-as well as control the volume via teachable machines
+This repository implements the files necessary to run the Kramer bass, which
+plays the Seinfeld theme song through garageband, and controls the volume with
+teachable machines
 
 BLE_CEEO.py  - implements the bluetooth packages used by the pico
 Seinfeld.mid - midi file containing the song to play
