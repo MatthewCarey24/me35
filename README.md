@@ -9,8 +9,8 @@ Detailed walkthroughs including video demonstrations exist on their own notion p
 
 - [Project 3](https://lilac-sight-911.notion.site/Zombie-Attack-10d92e5b3a418085924dc2a42669b3e4?pvs=74) - Zombie Attack
 
-- [Project 4](https://lilac-sight-911.notion.site/Smart-Driving-11b92e5b3a41809898fef44301c44378?pvs=74) - Smart Driving
+- [Project 4](https://lilac-sight-911.notion.site/Sharks-and-Minnows-11392e5b3a4180958492dc166b0c2b66) - Sharks & Minnows
 
-- [Project 5](https://lilac-sight-911.notion.site/Smart-Driving-11b92e5b3a41809898fef44301c44378?pvs=74) - Musical Instrument
+- [Project 5](https://lilac-sight-911.notion.site/Smart-Driving-11b92e5b3a41809898fef44301c44378?pvs=74) - Smart Driving
 
 - [Final](https://lilac-sight-911.notion.site/Fence-Fishing-15e92e5b3a4180ea9c1cde0a6ee3da91) - Fence Fishing
